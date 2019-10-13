@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文字属性的简写</title>
+</head>
+<style type="text/css">
+    p{
+        /*font-style: italic;*/
+        /*font-weight: bold;*/
+        /*font-size: 20px;*/
+        /*font-family: "微软雅黑";*/
+        /*使用font属性，一行代码实现上面4中*/
+        font: italic bold 20px "微软雅黑";
+    }
+</style>
+<body>
+    <!--简写格式
+        在这种格式中 style weight 都是可以省略的，size和family不能省略
+        并且style 和 weight 位置可交换，size和family不能交换位置且要写在最后
+
+    -->
+    <!--font:style weight size family-->
+    <p>ads我是段落</p>
+</body>
+</html>

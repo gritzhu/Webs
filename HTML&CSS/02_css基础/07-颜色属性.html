@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    p{
+        /*color: red;*/
+        /*color: rgb(255,0,0 );*/
+        /*color: rgba(255,0,0,1);*/
+        /*color: #ff0000;*/
+    }
+</style>
+<body>
+<!--
+    重点不是color属性的使用，而是取值
+    格式 color: red;
+    取值：
+    1.英文单词 -- red green
+    2.rgb 三原色 red green blue --rgb(0,0,0),括号中写三种颜色的亮度，0-255，0代表不发光，255最亮
+    在前端开发中，常用到灰色，只需要让三个值相等，并且值越接近255，就越接近白色，越接近0就越接近黑色
+    3.rgba  --其中rgb和上边代表一样，a代表透明度，a取值0-1，越小越透明
+    4.十六进制 #000000
+        其本质就是RGB,在十六进制中每2位表示一个颜色
+        例如 #FFEE00 FF表示R EE表示G 00表示B
+        FF转为十进制等于255
+        00转为十进制等于0
+        只要十六进制的每两位都是一样的，就可以简写成一个
+        即#FFEE00= #FE0 ,两位数不一样不能简写
+-->
+    <p>我是段落</p>
+</body>
+</html>
