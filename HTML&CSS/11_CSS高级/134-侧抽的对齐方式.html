@@ -19,7 +19,7 @@
             flex-direction: row;
             /*告诉浏览器排版好的伸缩项需要和主轴的起点对齐*/
             justify-content: flex-start;
-            /*告诉浏览器排版好的伸缩项需要和侧轴的起点对齐*/
+            /*告诉浏览器排版好的伸缩项需要和侧轴的起点对齐,默认取值*/
             /*align-items: flex-start;*/
             /*align-items: flex-end;*/
             /*align-items: center;*/
@@ -36,11 +36,12 @@
             如果需要设置为拉伸对齐, 那么伸缩项不能设置高度
             如果伸缩项设置了高度, 那么拉伸对齐就会失效
             */
-            align-items: stretch;
+            /*align-items: stretch;*/
         }
         ul>li{
             width: 100px;
-            /*height: 100px;*/
+            /*不给li设置高度的话，和父元素高度相同，相当于拉伸的效果*/
+            height: 100px;
             line-height: 100px;
             text-align: center;
             font-size: 30px;
